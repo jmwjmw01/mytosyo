@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   def index
-    @books = Book.all
+    @books = Book.where(user_id: current_user.id)
   end
 
   def show
@@ -16,6 +16,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
+		@book.user_id = current_user.id
     if @book.save
       redirect_to books_path
     else
