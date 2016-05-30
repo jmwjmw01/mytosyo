@@ -2,6 +2,7 @@ class RentalsController < ApplicationController
   
   def index
     @rental = Rental.all
+    @book=Book.new
   end
 
   def new
