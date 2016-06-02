@@ -12,7 +12,7 @@ class RentalsController < ApplicationController
 
   def create
     @book = Book.find(params[:book].require(:id))
-    if @book.Rental_id.nil?
+    if @book.rental_count.nil?
       @rental = Rental.new(rental_date: DateTime.now)
       @rental.User = current_user
       @rental.Book = @book
@@ -30,10 +30,20 @@ class RentalsController < ApplicationController
   end
 
   def destroy
-    @rental = current_user.Rentals.find(params[:id])
+    @rental = Rental.find(params[:id])
     @rental.Book.update(Rental_id: nil)
     @rental.destroy
     redirect_to rentals_path
+  end
+  
+  def get_info
+    @book=Book.find(1)
+    info = {'Title' => @book.title,
+            'Author' => @book.author,
+            'Manufacturer' => @book.manufacturer,
+            'Id' => @book.id
+            }
+    render json: info
   end
 
 end

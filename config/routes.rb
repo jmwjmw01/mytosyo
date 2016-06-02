@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   
   get 'get_info', to: 'books#get_info', path: "/books/new/get_info"
+  get 'search', to: 'rentals#get_info', path: "/rentals/new/search"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

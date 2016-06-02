@@ -10,9 +10,9 @@
      <tr class="info"><th>#</th><th>タイトル</th><th>貸出日時</th><th>返却処理</th></tr>
   </thead>
   <tbody>
-    <% @rental.each do |r, i| %>
+    <% @rental.each do |r| %>
     <tr>
-    <td><%= i+1 %></td>
+    <td><%= r.Book.id %></td>
     <td><%= r.Book.title %></td>
     <td><%= r.rental_date.in_time_zone('Tokyo') %></td>
     <td width="100" align="center">
@@ -24,18 +24,4 @@
 </table>
 <% else %>
   <h4>No data yet.</h4>
-<% end %>
-
-<h1>本の貸出</h1>
-
-<%= bootstrap_form_for(@book, :url => rentals_path) do |f| %>
-  <%= f.text_field :book_code %>
-  <input class="btn btn-danger" type="button" id="search_button", value="検索">
-  <b id="error_msg">  </b>
-  <hr>
-  <%= f.text_field :title, :readonly => true %>
-  <%= f.text_field :author, :readonly => true %>
-  <%= f.text_field :manufacturer, :readonly => true %>
-  <%= f.text_field :id, :readonly => true %>
-  <%= f.primary "貸出", id: "rental_button", disabled: "disabled" %>
 <% end %>

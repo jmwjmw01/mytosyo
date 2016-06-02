@@ -17,6 +17,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
 		@book.user_id = current_user.id
+		@book.image="http://images-jp.amazon.com/images/P/"+ @book.isbn + ".09.MZZZZZZZ"
     if @book.save
       redirect_to books_path
     else

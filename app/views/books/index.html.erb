@@ -7,11 +7,12 @@
 <% if @books.any? %>
 <table class="table table-bordered table-hover">
   <thead>
-     <tr class="info"><th>ID</th><th>Titile</th><th>Author</th><th>Manufacture</th><th>Release</th><th>Operation</th></tr>
+     <tr class="info"><th>thumbnail</th><th>ID</th><th>Titile</th><th>Author</th><th>Manufacture</th><th>Release</th><th>Operation</th></tr>
   </thead>
   <tbody>
     <% @books.each do |b| %>
     <tr>
+    <td><%= image_tag b.image %></td>
     <td><%= b.id %></td>
     <td><%= b.title %></td>
     <td><%= b.author %></td>

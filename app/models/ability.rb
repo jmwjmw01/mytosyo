@@ -8,6 +8,11 @@ class Ability
     else
       can :update, User
       can :read, Book
+      can :new, Book
+      can :create, Book
+      can :edit, Book
+      can :destroy, Book
+      can :get_info, Book
       can :manage, Rental
       cannot :read, Log
       cannot :destroy, Log
