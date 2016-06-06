@@ -7,7 +7,7 @@
 <% if @books.any? %>
 <table class="table table-bordered table-hover">
   <thead>
-     <tr class="info"><th>thumbnail</th><th>Titile</th><th>Author</th><th>Manufacture</th><th>Operation</th></tr>
+     <tr class="info"><th>thumbnail</th><th>Titile</th><th>Author</th><th>Manufacture</th><th>Situation</th><th>Operation</th></tr>
   </thead>
   <tbody>
     <% @books.each do |b| %>
@@ -16,6 +16,13 @@
     <td><%= b.title %></td>
     <td><%= b.author %></td>
     <td><%= b.manufacturer %></td>
+    <td width="230" align="center">
+      <% if b.Rental_id.nil? %>
+        <%= b.book_code %>
+      <% else %>
+        貸出中
+      <% end %>
+    </td>
     <td width="230" align="center">
       <div class="btn-group">
         <%= link_to 'Show', book_path(b.id), class: "btn btn-info" %>

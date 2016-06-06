@@ -25,7 +25,7 @@ class RentalsController < ApplicationController
         render 'new'
       end
     else
-      redirect_to new_rental_path, notice: "その本はすでに貸出中です。"
+      redirect_to books_path, notice: "その本はすでに貸出中です。"
     end
   end
 
