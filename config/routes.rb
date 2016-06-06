@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
-  post 'welcome/rental_path' => 'welcome#search'
+  get 'books/index'
+  post 'books/rental_path' => 'books#search'
   post 'books/create_rental_path' => 'rentals#create'
   
   resources :books
   resources :rentals
   
-  root 'welcome#index'
+  root 'books#index'
   
   get 'get_info', to: 'books#get_info', path: "/books/new/get_info"
   get 'create_rental', to: 'rentals#create', path: "/rentals/:id/create(.:format)"
