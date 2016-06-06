@@ -22,6 +22,7 @@
       <div class="btn-group">
         <%= link_to 'Show', book_path(b.id), class: "btn btn-info" %>
         <%= link_to 'Edit', edit_book_path(b.id), class: "btn btn-success" %>
+        <%= link_to 'Rental', create_rental_path(b.id), class: "btn btn-warning" %>
         <%= link_to 'Destroy', book_path(b.id), method: :delete, data: { confirm: "削除してもよろしいですか？" }, :class => "btn btn-danger" %>
       </div>
     </td>
