@@ -1,0 +1,100 @@
+﻿body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #93CEB8; 
+	color: #69514B;
+}
+
+/* 文字の設定 */
+h1{
+	padding: 10px;
+}
+#ind{
+	padding-left: 2em;
+}
+
+/* topの背景 */
+div.top{
+	height: 70px;
+	text-align: center;
+	top: 0px;
+}
+/* 白い背景 */
+div.shiro{
+	background-color: #FFFFFF;
+	color: #69514B;
+}
+/* フッターの指定 */
+div.footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+/* キャラクターのことば */
+/* 吹き出しの中に入れたいんだけど... */
+p.kotoba{
+	text-align: bottom;
+}
+
+
+/* 白い文字(created by ikatakoso-su) */
+#shiro-moji{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* 吹き出し、キャラクター */
+/* 吹き出しのサイズ：440px*140px　動物のサイズ：245px*349px */
+#hukidashi{
+	background-image: url("hukidashi_kuma_2.png");
+	height: 140px;
+	width: 440px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#character{
+	background-image: url("kuma2.png");
+	background-size: auto 230px;
+	width: 160px;
+	height: 230px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+/* メニューバー */
+#menu{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+#menu li{
+	width: 20%;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#menu li a{
+	width: auto;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px 0px;
+	text-decoration: none;
+	display: block;
+	background-color: #4F7F6D;
+}
+#menu li a:hover{
+	background-color: #9BAB9F;
+}
+
+
+/* ヘルプページ用 */
+/* 白い枠 */
+div.shirowaku{
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 10px;
+}

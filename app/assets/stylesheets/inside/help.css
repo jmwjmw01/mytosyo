@@ -1,0 +1,20 @@
+﻿body{
+	background-color:#93CEB8;
+	color: #000000;
+	margin: 0px;
+}
+
+/* 白い背景 */
+div.shiro{
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 10px;
+	color: #69514B;
+}
+
+/* 白い文字(created by ikatakoso-su) */
+#shiro-moji{
+	color: #FFFFFF;
+	font-weight: bold;
+}
