@@ -3,10 +3,10 @@
 
 <%= bootstrap_form_for(@book) do |f| %>
   <%= f.text_field :isbn %>
-  <%= f.text_field :title %>
-  <%= f.text_field :author %>
-  <%= f.text_field :manufacturer %>
-  <%= f.text_field :publication_date %>
-  <%= f.text_field :book_code %>
+  <%= f.text_field :title , label:"タイトル" %>
+  <%= f.text_field :author , label:"著者" %>
+  <%= f.text_field :manufacturer , label:"出版社" %>
+  <%= f.text_field :publication_date , label:"出版日" %>
+  <%= f.text_field :book_code , label:"本の場所" %>
   <%= f.primary "本を編集" %>
 <% end %>

@@ -1,13 +1,7 @@
 <h1>本の貸出</h1>
 
 <%= bootstrap_form_for(@book, :url => rentals_path) do |f| %>
-  <%= f.text_field :book_code %>
-  <input class="btn btn-danger" type="button" id="search_button", value="検索">
-  <b id="error_msg">  </b>
-  <hr>
-  <%= f.text_field :title %>
-  <%= f.text_field :author %>
-  <%= f.text_field :manufacturer %>
-  <%= f.text_field :id %>
+  <%= f.text_field :place ,label:"貸す人の名前"%>
+  <%= f.hidden_field :id , value: params[:format] %>
   <%= f.primary "貸出", id: "rental_button" %>
 <% end %>

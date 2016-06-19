@@ -1,16 +1,7 @@
-<%= stylesheet_link_tag "inside/azarashi.css", :media => "screen" %>
-<h1>持っている本</h1>
-<div align="right">
-<%= link_to "本の追加", new_book_path, :class => "btn btn-primary button" %>
-</div>
-<hr>
+<%= stylesheet_link_tag "inside/risu.css", :media => "screen" %>
 
-<%= form_tag({:controller => "books", :action => "search"}) do %>
-検索条件: <%= text_field_tag "search_cond" %>
-<%= submit_tag "検索" %>
-<% end %>
-
-<% if @books.any? %>
+<h1>"<%= @cond -%>"を含む検索結果</h1>
+ 
 <table class="table table-bordered table-hover">
   <thead>
     <tr class="info">
@@ -18,11 +9,12 @@
        <th class="table_tag">タイトル</th>
        <th class="table_tag">著者</th>
        <th class="table_tag">出版者</th>
-       <th class="table_tag">本の場所</th>
+       <th class="table_tag">場所</th>
        <th class="table_tag">いろいろ</th>
     </tr>
   </thead>
-  <tbody class="shiro">
+
+   <tbody class="shiro">
       <%#= link_to book_path(b.id), class: "btn btn-info" do %>
       <% @books.each do |b| %>
       <tr>
@@ -52,6 +44,3 @@
       <%# end %>
   </tbody>
 </table>
-<% else %>
-  <h4>No data yet.</h4>
-<% end %>

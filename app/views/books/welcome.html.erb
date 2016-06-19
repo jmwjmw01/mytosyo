@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= stylesheet_link_tag "inside/azarashi.css", :media => "screen" %>
+    <%= stylesheet_link_tag "inside/kuma.css", :media => "screen" %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
@@ -50,25 +50,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!--<a class="navbar-brand" href="#">Mytosyo</a>-->
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav navbar-nav--extend">
-            <li><%= link_to "持っている本", books_path, {:id=>"link_moji"}%></li>
-            <li><%= link_to "貸している本", rentals_path, {:id=>"link_moji"}  %></li>
+          <ul class="nav navbar-nav navbar-nav--extend" align="right">
             <li><%= link_to "help", books_help_path, {:id=>"link_moji"} %></li>
           </ul>
-          <% if user_signed_in? %>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle dropdown-toggle--extend" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.name %> <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><%= link_to "プロフィール変更", edit_user_registration_path %></li>
-                <li class="divider"></li>
-                <li><%= link_to "サインアウト", destroy_user_session_path, :method => :delete%></li>
-              </ul>
-            </li>
-          </ul>
-          <% end %>
         </div>
       </div>
     </div>
@@ -81,18 +66,7 @@
         </div>
       </div><!--/row-->
 
-      <%# コメント %>
       <footer align="center">
-        <%# ふきだし %>
-        <span width="100%">
-          <span class="bubble bubble--expand">
-            あいうえお
-          </span>
-          <span class="chara">
-            <%= image_tag 'azarashi2.png', {:size=>"80×115"} %>
-          </span>
-        </span>
-        
         <p id="shiro-moji">created by ikatakoso-su 2016</p>
       </footer>
 

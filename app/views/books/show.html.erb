@@ -1,25 +1,42 @@
 <%= stylesheet_link_tag "inside/kuma.css", :media => "screen" %>
 <h1>本の詳細</h1>
 
+<div align="center">
+</div>
 <table class="table table-bordered">
   <tbody>
     <tr>
-    <td width="100", class="info">タイトル</td> <td><%= @book.title %></td>
+      <td rowspan="6" width="auto" align="center" valign="center">
+        <%= @book.image.blank? %><br>
+        <%# if @book.image == empty %>
+          no image
+        <%# else %>
+          <% @book.image %>
+          <%= image_tag @book.image %>
+        <%# end %>
+      </td>
+      <td width="100", class="info table_tag">タイトル</td>
+      <td class="shiro"><%= @book.title %></td>
     </tr>
     <tr>
-    <td width="100", class="info">著者</td> <td><%= @book.author %></td>
+      <td width="100", class="info table_tag">著者</td>
+      <td class="shiro"><%= @book.author %></td>
     </tr>
     <tr>
-    <td width="100", class="info">出版社</td> <td><%= @book.manufacturer %></td>
+      <td width="100", class="info table_tag">出版社</td>
+      <td class="shiro"><%= @book.manufacturer %></td>
     </tr>
     <tr>
-    <td width="100", class="info">出版日</td> <td><%= @book.publication_date %></td>
+      <td width="100", class="info table_tag">出版日</td>
+      <td class="shiro"><%= @book.publication_date %></td>
     </tr>
     <tr>
-    <td width="100", class="info">ISBN</td> <td><%= @book.isbn %></td>
+      <td width="100", class="info table_tag">ISBN</td>
+      <td class="shiro"><%= @book.isbn %></td>
     </tr>
     <tr>
-    <td width="100", class="info">管理番号</td> <td><%= @book.book_code %></td>
+      <td width="100", class="info table_tag">管理番号</td>
+      <td class="shiro"><%= @book.book_code %></td>
     </tr>
   </tbody>
 </table>

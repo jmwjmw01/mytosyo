@@ -1,0 +1,63 @@
+kuma, risu, neko, usagi, azarashi, kujira
+
+*kuma*
+背景色：#93CEB88
+メニューバーの色：#4F7F6D -> #9BAB9F
+メニューの文字(#menu li a) ：#FFFFFF
+-h1
+color: #FFFFFF, padding: 10px
+-h2
+color: #69514B
+-table_color
+#F0FFF0
+
+*risu*
+背景色：#F5CEBF
+メニューバーの色：#F29A78 -> #F4AF92
+メニューの文字(#menu li a) ：#FFFFFF
+-h1
+color: #FFFFFF, padding: 10px
+-h2
+color: #000000
+-table_color
+
+*neko*
+背景色：#F5EC94
+メニューバーの色：#F7BE72 -> #FBD9AC
+メニューの文字(#menu li a) ：#69514B
+-h1
+color: #FFFFFF, padding: 10px
+-h2
+color: #
+-table_color
+
+*usagi*
+背景色：#A19EB6
+メニューバーの色：#596793 -> #7B8EC7
+メニューの文字(#menu li a) ：#FFFFFF
+-h1
+color: #FFFFFF, padding: 10px
+-h2
+color: #
+-table_color
+
+*kujira*
+背景色：#EEEEEE
+メニューバーの色：#1A264D -> #10508A
+メニューの文字(#menu li a) ：#FFFFFF
+-h1
+color: #1A264D, padding: 10px
+-h2
+color: #000000
+-table_color
+
+*azarashi*
+背景色：#202B58
+メニューバーの色：#DDE5F4 -> #94B1DC
+メニューの文字(#menu li a) ：#10508A
+-h1
+color: #FFFFFF, padding: 10px
+-h2
+color: #000000
+-table_color
+

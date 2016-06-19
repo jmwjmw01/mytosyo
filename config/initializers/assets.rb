@@ -17,3 +17,12 @@ Rails.application.config.assets.precompile += %w( inside/log_in.css )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( inside/azarashi.css )
+Rails.application.config.assets.precompile += %w( inside/help.css )
+Rails.application.config.assets.precompile += %w( inside/kujira.css )
+Rails.application.config.assets.precompile += %w( inside/kuma.css )
+Rails.application.config.assets.precompile += %w( inside/log_in.css )
+Rails.application.config.assets.precompile += %w( inside/neko.css )
+Rails.application.config.assets.precompile += %w( inside/rentals.css )
+Rails.application.config.assets.precompile += %w( inside/risu.css )
+Rails.application.config.assets.precompile += %w( inside/usagi.css )

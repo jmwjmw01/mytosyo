@@ -1,9 +1,14 @@
-﻿body{
+body{
 	background-color:#93CEB8;
-	color: #000000;
+	color: #1A264D;
 	margin: 0px;
 }
-
+/* 文字の設定 */
+h1{
+	padding: 10px;
+	font-weight: bold;
+	color: #1A264D;
+}
 form{
 	margin: 10px;
 }
@@ -15,27 +20,27 @@ input{
 	padding-right: 8px;
 	font-size: 1.3em;
 }
-input.shikaku{
+.shikaku{
 	height: 35px;
 	margin: 5px;
 }
-iinput.shikaku2{
+.shikaku2{
 	height: 35px;
 	margin: 5px;
 	outline: solid 1px #7B6628;
 }
-input.button{
+.button{
 	height: 40px;
 	background-color: #497D57;
 	color: #FFFFFF;
 	padding: 3px 15px;
 	margin: 10px 0px;
 }
-input.button:hover{
+.button:hover{
 	background-color: #95A370;
 	cursor: pointer;
 }
-input.entry{
+.entry{
 	margin: 10px;
 	color: #FFFFFF;
 }
@@ -50,7 +55,7 @@ a:hover{
 	color: #915F53;
 }
 
-img.help{
+.help{
 	width: 45px;
 	height: 45px;
 	margin: 30px 30px 0px 0px;

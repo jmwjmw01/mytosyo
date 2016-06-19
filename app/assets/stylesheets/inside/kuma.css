@@ -1,4 +1,4 @@
-﻿body{
+body{
 	margin: 0px;
 	padding: 0px;
 	background-color: #93CEB8; 
@@ -8,34 +8,21 @@
 /* 文字の設定 */
 h1{
 	padding: 10px;
+	font-weight: bold;
 }
 #ind{
 	padding-left: 2em;
 }
 
-/* topの背景 */
-div.top{
-	height: 70px;
-	text-align: center;
-	top: 0px;
-}
 /* 白い背景 */
-div.shiro{
+.shiro{
 	background-color: #FFFFFF;
-	color: #69514B;
 }
-/* フッターの指定 */
-div.footer{
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
+/* 表の、上の部分のデザイン */
+.table_tag{
+	background-color: #F0FFF0 !important;
+	text-align: center;
 }
-/* キャラクターのことば */
-/* 吹き出しの中に入れたいんだけど... */
-p.kotoba{
-	text-align: bottom;
-}
-
 
 /* 白い文字(created by ikatakoso-su) */
 #shiro-moji{
@@ -43,58 +30,105 @@ p.kotoba{
 	font-weight: bold;
 }
 
-/* 吹き出し、キャラクター */
-/* 吹き出しのサイズ：440px*140px　動物のサイズ：245px*349px */
-#hukidashi{
-	background-image: url("hukidashi_kuma_2.png");
-	height: 140px;
-	width: 440px;
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#character{
-	background-image: url("kuma2.png");
-	background-size: auto 230px;
-	width: 160px;
-	height: 230px;
-	background-repeat: no-repeat;
-	background-position: bottom;
+/* メニューバーとその上 */
+/* Mytosyo */
+.mytosyo{
+	height: 70px;
+	text-align: center;
+	top: 0px;
 }
 
-/* メニューバー */
-#menu{
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-}
-#menu li{
-	width: 20%;
-	float: left;
-	padding: 0px;
-	margin: 0px;
-	text-align: center;
-}
-#menu li a{
-	width: auto;
-	color: #FFFFFF;
-	font-size: 1em;
-	font-weight: bold;
-	padding: 10px 0px;
-	text-decoration: none;
-	display: block;
+/* メニューバー全体に */
+.navbar--extend{
 	background-color: #4F7F6D;
+	margin: 0px;
+	border: none;
+	width: 100%;
 }
-#menu li a:hover{
+/* メニューバーの中の文字 */
+#link_moji{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ユーザ名の文字 */
+.dropdown-toggle--extend{
+	color: #FFFFFF !important;
+	font-weight: bold;
+}
+/* リンク */
+.navbar-nav--extend li:hover{
 	background-color: #9BAB9F;
 }
 
 
 /* ヘルプページ用 */
 /* 白い枠 */
-div.shirowaku{
+.shirowaku{
 	background-color: #FFFFFF;
 	margin: 10px;
 	padding: 30px;
 	border-radius: 10px;
+}
+
+/* ボタン(本の登録とか) */
+.button{
+	background-color: #4F7F6D;
+	color: #FFFFFF;
+	padding: 3px 15px;
+	margin: 10px 0px;
+	text-align: center;
+	border: none;
+}
+.button:hover{
+	background-color: #9BAB9F;
+	cursor: pointer;
+}
+
+/* ふきだし */
+.bubble {
+	display:inline-block;
+	position: relative;
+	border-radius:5px;
+	background: #FFFFFF;
+	padding: 35px;
+	width: 60%;
+	bottom: 0px;
+}
+.bubble:after {
+	position: absolute;
+	content: " ";
+	height: 0px;
+	width: 0px;
+	bottom: 0px;
+}
+/* 右三角半分(背の高いキャラクター) */
+.bubble--expand:after {
+	left: 100%;
+	top: 10%;
+	border-top:10px solid;
+	border-color: #FFFFFF;
+	border-right:10px solid transparent;
+	bottom: 0px;
+}
+/* キャラクター */
+.chara{
+	bottom: 0px;
+}
+
+/* 検索バー */
+.search_bar{
+	background-color: #FFFFFF;
+	height: 3em;
+	padding: 5px;
+}
+.search_bar-1{
+	width: 40em;
+	border-radius: 10px 0px 0px 10px;
+	margin-right: 0px;
+}
+.search_bar-2{
+	background-color: #F0FFF0;
+	width: 10em;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: 0px;
 }
