@@ -60,6 +60,16 @@ class BooksController < ApplicationController
     render json: info
   end
 
+  def search
+	@cond = params[:search_cond]
+     @books = Book.where(‘title like ?', '%' + @cond + '%')
+ 
+     respond_to do |format|
+       format.html
+       format.json { render json: @books }
+     end
+   end
+
   private
 
     def book_params

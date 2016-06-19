@@ -1,4 +1,5 @@
-<h1>貸出中図書一覧</h1>
+<%= stylesheet_link_tag "inside/kuma.css", :media => "screen" %>
+<h1>貸している本/借りている本</h1>
 
 <%= link_to "本の貸出", new_rental_path, class: "btn btn-primary" %>
 
@@ -7,9 +8,14 @@
 <% if @rental.any? %>
 <table class="table table-bordered table-hover">
   <thead>
-     <tr class="info"><th>#</th><th>タイトル</th><th>貸出日時</th><th>返却処理</th></tr>
+     <tr class="info">
+       <th>#</th>
+       <th>タイトル</th>
+       <th>貸出日時</th>
+       <th>返却処理</th>
+     </tr>
   </thead>
-  <tbody>
+  <tbody class="shiro">
     <% @rental.each do |r| %>
     <tr>
     <td><%= r.Book.id %></td>

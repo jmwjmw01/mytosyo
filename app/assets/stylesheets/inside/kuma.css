@@ -23,35 +23,11 @@ h1{
 	background-color: #F0FFF0 !important;
 	text-align: center;
 }
-/* キャラクターのことば */
-/* 吹き出しの中に入れたいんだけど... */
-.kotoba{
-	text-align: bottom;
-}
-
 
 /* 白い文字(created by ikatakoso-su) */
 #shiro-moji{
 	color: #FFFFFF;
 	font-weight: bold;
-}
-
-/* 吹き出し、キャラクター */
-/* 吹き出しのサイズ：440px*140px　動物のサイズ：245px*349px */
-#hukidashi{
-	background-image: url("hukidashi_kuma_2.png");
-	height: 140px;
-	width: 440px;
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#character{
-	background-image: url("kuma2.png");
-	background-size: auto 230px;
-	width: 160px;
-	height: 230px;
-	background-repeat: no-repeat;
-	background-position: bottom;
 }
 
 /* メニューバーとその上 */
@@ -101,7 +77,6 @@ h1{
 	padding: 3px 15px;
 	margin: 10px 0px;
 	text-align: center;
-	vertical-align: center;
 	border: none;
 }
 .button:hover{
@@ -109,3 +84,33 @@ h1{
 	cursor: pointer;
 }
 
+/* ふきだし */
+.bubble {
+	display:inline-block;
+	position: relative;
+	border-radius:5px;
+	background: #FFFFFF;
+	padding: 35px;
+	width: 60%;
+	bottom: 0px;
+}
+.bubble:after {
+	position: absolute;
+	content: " ";
+	height: 0px;
+	width: 0px;
+	bottom: 0px;
+}
+/* 右三角半分(背の高いキャラクター) */
+.bubble--expand:after {
+	left: 100%;
+	top: 10%;
+	border-top:10px solid;
+	border-color: #FFFFFF;
+	border-right:10px solid transparent;
+	bottom: 0px;
+}
+/* キャラクター */
+.chara{
+	bottom: 0px;
+}
