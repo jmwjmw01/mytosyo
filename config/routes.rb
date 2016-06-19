@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'books/rental_path' => 'books#search'
   post 'books/create_rental_path' => 'rentals#create'
   
+  get 'books/help'
+  
   resources :books
   resources :rentals
   

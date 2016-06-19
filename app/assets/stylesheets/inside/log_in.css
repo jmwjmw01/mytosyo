@@ -1,0 +1,70 @@
+body{
+	background-color:#93CEB8;
+	color: #000000;
+	margin: 0px;
+}
+
+form{
+	margin: 10px;
+}
+input{
+	margin: 3px;
+	border-radius: 7px;
+	border:none;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 1.3em;
+}
+.shikaku{
+	height: 35px;
+	margin: 5px;
+}
+.shikaku2{
+	height: 35px;
+	margin: 5px;
+	outline: solid 1px #7B6628;
+}
+.button{
+	height: 40px;
+	background-color: #497D57;
+	color: #FFFFFF;
+	padding: 3px 15px;
+	margin: 10px 0px;
+}
+.button:hover{
+	background-color: #95A370;
+	cursor: pointer;
+}
+.entry{
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+/* リンクの色を茶色に、アンダーラインもなし */
+a{
+	color: #69514B;
+	text-decoration: none;
+}
+/* オンマウスで色を変える */
+a:hover{
+	color: #915F53;
+}
+
+.help{
+	width: 45px;
+	height: 45px;
+	margin: 30px 30px 0px 0px;
+}
+
+/* 白い文字(created by ikatakoso-su) */
+#shiro-moji{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* 茶色い文字 */
+#cha-moji{
+	color: #69514B;
+	text-decoration: none;
+	margin: 3px;
+	font-weight: 700;
+}

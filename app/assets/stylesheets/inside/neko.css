@@ -1,0 +1,91 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #F5EC94; 
+	color: #69514B;
+}
+
+/* 文字の設定 */
+h1{
+	padding: 10px;
+	font-weight: bold;
+}
+#ind{
+	padding-left: 2em;
+}
+
+/* 白い背景 */
+.shiro{
+	background-color: #FFFFFF;
+}
+
+/* キャラクターのことば */
+/* 吹き出しの中に入れたいんだけど... */
+.kotoba{
+	text-align: bottom;
+}
+
+
+/* 白い文字(created by ikatakoso-su) */
+#shiro-moji{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* 吹き出し、キャラクター */
+/* 吹き出しのサイズ：440px*140px　動物のサイズ：245px*349px */
+#hukidashi{
+	background-image: url("hukidashi_neko_2.png");
+	height: 140px;
+	width: 440px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#character{
+	background-image: url("neko2.png");
+	background-size: auto 230px;
+	width: 160px;
+	height: 230px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+/* メニューバーとその上 */
+/* Mytosyo */
+.mytosyo{
+	height: 70px;
+	text-align: center;
+	top: 0px;
+}
+
+/* メニューバー全体に */
+.navbar--extend{
+	background-color: #F7BE72;
+	margin: 0px;
+	border: none;
+	width: 100%;
+}
+/* メニューバーの中の文字 */
+#link_moji{
+	color: #69514B;
+	font-weight: bold;
+}
+/* ユーザ名の文字 */
+.dropdown-toggle--extend{
+	color: #69514B !important;
+	font-weight: bold;
+}
+/* リンク */
+.navbar-nav--extend li:hover{
+	background-color: #FBD9AC;
+}
+
+
+/* ヘルプページ用 */
+/* 白い枠 */
+.shirowaku{
+	background-color: #FFFFFF;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 10px;
+}
