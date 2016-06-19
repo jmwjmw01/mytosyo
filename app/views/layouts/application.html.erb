@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= stylesheet_link_tag "inside/risu.css", :media => "screen" %>
+    <%= stylesheet_link_tag "inside/azarashi.css", :media => "screen" %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
@@ -54,7 +54,7 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav navbar-nav--extend">
             <li><%= link_to "持っている本", books_path, {:id=>"link_moji"}%></li>
-            <li><%= link_to "貸している本/借りている本", rentals_path, {:id=>"link_moji"}  %></li>
+            <li><%= link_to "貸している本", rentals_path, {:id=>"link_moji"}  %></li>
             <li><%= link_to "help", books_help_path, {:id=>"link_moji"} %></li>
           </ul>
           <% if user_signed_in? %>
@@ -89,7 +89,7 @@
             あいうえお
           </span>
           <span class="chara">
-            <%= image_tag 'risu2.png', {:size=>"80×115"} %>
+            <%= image_tag 'azarashi2.png', {:size=>"80×115"} %>
           </span>
         </span>
         

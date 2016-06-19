@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   get 'get_info', to: 'books#get_info', path: "/books/new/get_info"
   get 'create_rental', to: 'rentals#create', path: "/rentals/:id/create(.:format)"
   get 'search', to: 'rentals#get_info', path: "/rentals/new/search"
-  
-  match 'books/search', via: [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

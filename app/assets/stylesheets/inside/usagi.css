@@ -115,3 +115,21 @@ h1{
 .chara{
 	bottom: 0px;
 }
+
+/* 検索バー */
+.search_bar{
+	background-color: #FFFFFF;
+	height: 3em;
+	padding: 5px;
+}
+.search_bar-1{
+	width: 40em;
+	border-radius: 10px 0px 0px 10px;
+	margin-right: 0px;
+}
+.search_bar-2{
+	background-color: #F0FFF0;
+	width: 10em;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: 0px;
+}

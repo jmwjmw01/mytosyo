@@ -20,7 +20,7 @@ h1{
 }
 /* 表の、上の部分のデザイン */
 .table_tag{
-	background-color: #F0FFF0 !important;
+	background-color: #F7BE72 !important;
 	text-align: center;
 }
 
@@ -69,6 +69,19 @@ h1{
 	padding: 30px;
 	border-radius: 10px;
 }
+/* ボタン(本の登録とか) */
+.button{
+	background-color: #F7BE72;
+	color: #69514B;
+	padding: 3px 15px;
+	margin: 10px 0px;
+	text-align: center;
+	border: none;
+}
+.button:hover{
+	background-color: #FBD9AC;
+	cursor: pointer;
+}
 
 /* ふきだし */
 .bubble {
@@ -100,4 +113,22 @@ h1{
 /* キャラクター */
 .chara{
 	bottom: 0px;
+}
+
+/* 検索バー */
+.search_bar{
+	background-color: #FFFFFF;
+	height: 3em;
+	padding: 5px;
+}
+.search_bar-1{
+	width: 40em;
+	border-radius: 10px 0px 0px 10px;
+	margin-right: 0px;
+}
+.search_bar-2{
+	background-color: #F0FFF0;
+	width: 10em;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: 0px;
 }

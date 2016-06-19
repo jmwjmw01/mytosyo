@@ -11,7 +11,7 @@ class RentalsController < ApplicationController
   end
 
   def create
-    @book = Book.find(params[:id])
+    @book = Book.find(params[:book][:id])
     if @book.Rental_id.nil?
       @rental = Rental.new(rental_date: DateTime.now)
       @rental.User = current_user
@@ -19,6 +19,7 @@ class RentalsController < ApplicationController
       if @rental.save
         @book.increment(:rental_count)
         @book.Rental_id = @rental.id
+        @book.place = params[:book][:place]
         @book.save
         redirect_to rentals_path
       else

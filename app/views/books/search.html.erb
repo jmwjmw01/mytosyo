@@ -1,12 +1,8 @@
 <%= stylesheet_link_tag "inside/risu.css", :media => "screen" %>
 
-<h1>Found Books includes "<%= @cond -%>"</h1>
+<h1>"<%= @cond -%>"を含む検索結果</h1>
  
- <%= form_tag({:controller => “books", :action => "search"}) do %>+   検索条件: <%= text_field_tag "search_cond" %>
-   <%= submit_tag "検索" %>
- <% end %>
- 
- <table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover">
   <thead>
     <tr class="info">
        <th class="table_tag">表紙</th>
@@ -17,7 +13,7 @@
        <th class="table_tag">いろいろ</th>
     </tr>
   </thead>
- 
+
    <tbody class="shiro">
       <%#= link_to book_path(b.id), class: "btn btn-info" do %>
       <% @books.each do |b| %>
